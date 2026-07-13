@@ -96,7 +96,7 @@ model.fit(forecast_data)
 
 future = model.make_future_dataframe(
     periods=months,
-    freq="M"
+    freq="MS"
 )
 
 forecast = model.predict(future)
